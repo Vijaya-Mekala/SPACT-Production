@@ -1,0 +1,94 @@
+
+{% load static %}
+<!--
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="{% static 'styles/topnavbar.css' %}"  />
+<link rel="stylesheet" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+<style>
+    
+          table#t02 {
+        width:100%;
+      }
+
+    table#t02 th {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    
+    table#t02 td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    table#t01, #t02 th {
+      padding: 5px;
+      text-align: left;
+    }
+    table#t01 td {
+        padding: 1px;
+        text-align: left;
+      }
+
+      table#t02 td {
+        padding: 1px;
+        text-align: left;
+      }
+      
+    table#t02 tr:nth-child(even) {
+      background-color: #eee;
+    }
+
+    table#t02 tr:nth-child(odd) {
+     background-color: #fff;
+    }
+
+    table#t02 th {
+      background-color:dimgrey;
+      color: white;
+    }
+
+    </style>
+<form>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Password Updation Portal</a>
+        <a href="#news">Change Password</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <table align="center" id="t02" style="width: 900px; margin-top: 30px;">
+        <tr align="center">
+            
+                <th></th>
+                <th>Server1 ServiceAccount</th>
+                <th></th>
+            
+            
+        </tr>
+        <tr>
+        <th>
+            App pool
+        </th>
+        <th>
+            Windows Service
+        </th>
+        <th>
+            Task Schedular
+        </th>
+    </tr>      
+            
+        <tr>
+            <td>App pool1</td>
+            <td>WinSer1</td>
+            <td>Tsk1</td>
+        </tr>
+        <tr>
+            <td>App pool2</td>
+            <td>WinSer2</td>
+            <td>Tsk2</td>
+        </tr>
+    </table>
+
+    </form> 
